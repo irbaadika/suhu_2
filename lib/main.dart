@@ -71,6 +71,7 @@ class _MyAppState extends State<MyApp> {
           padding: EdgeInsets.only(left: 10, right: 10, top: 10),
           child: Column(
             children: [
+              Text('Celcius'),
               Slider(
                   value: currentSuhu,
                   max: 100,
