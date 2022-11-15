@@ -77,6 +77,13 @@ class _MyAppState extends State<MyApp> {
                   max: 100,
                   divisions: 100,
                   label: currentSuhu.round().toString(),
+                  onChangeEnd: (value) {
+                    setState(() {
+                      currentSuhu = value;
+                      input_user.text = currentSuhu.toString();
+                      Konversi();
+                    });
+                  },
                   onChanged: (double value) {
                     setState(() {
                       currentSuhu = value;
